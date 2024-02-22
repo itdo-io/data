@@ -12,7 +12,7 @@ published: '2024-02-21'
 
 ## Introduction
 
-Whole code is available at [GitHub](https://github.com/pvbhanuteja/cf-openai-azure-proxy)
+Whole code is available at [GitHub](https://github.com/itdo-io/cf-openai-azure-proxy)
 
 Azure OpenAI Service offers a compelling alternative to OpenAI's offerings, providing easy application and card binding processes, along with a free credits for startups. However, many OpenAI clients do not support Azure OpenAI Service out of the box. This guide introduces a workaround using a free Cloudflare Worker as a proxy, enabling these clients to communicate with Azure OpenAI Service seamlessly.
 
@@ -37,7 +37,7 @@ First setup the Azure OpenAI Service and create a deployment and get the resourc
 {% img src="azure.png" alt="Diagram showing Azure OpenAI Service" %}
 
 1. **Register and Log In to Cloudflare:** Create a new Cloudflare Worker.
-2. **Script Setup:** Copy and paste the `cf-openai-azure-proxy.js`[code](https://raw.githubusercontent.com/pvbhanuteja/cf-openai-azure-proxy/main/cf-openai-azure-proxy.js) script into the Cloudflare Worker editor.
+2. **Script Setup:** Copy and paste the `cf-openai-azure-proxy.js`[code](https://github.com/itdo-io/cf-openai-azure-proxy/blob/main/cf-openai-azure-proxy.js) script into the Cloudflare Worker editor.
 3. **Configuration:** Adjust the `resourceName` and deployment mapper values directly in the script or via environment variables.
 
     `Directly in the script:`
