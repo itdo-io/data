@@ -87,6 +87,8 @@ Ensure the `PYTHONNOUSERSITE` environment variable is set to `True` to prevent P
 ```shell:terminal
 # Create the Conda environment
 conda env create -f environment.yml
+# Activate the Conda environment
+conda activate my_project_env
 # Create Conda lock file(s) from environment.yml
 conda-lock -k explicit --conda mamba
 # Set up Poetry
